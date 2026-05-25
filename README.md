@@ -48,29 +48,9 @@ DSA_Practice/
 
 ---
 
-## ✅ Problems Solved
-
-### 🗄️ SQL
-
-| # | Problem | Difficulty | Topics |
-|---|---------|------------|--------|
-| 1757 | [Recyclable and Low Fat Products](./1757.%20Recyclable%20and%20Low%20Fat%20Products) | 🟢 Easy | WHERE, Filtering |
-
----
-
-### 🐍 Python / DSA
-
-*More problems being added regularly. Check back soon.*
-
-| # | Problem | Difficulty | Topics |
-|---|---------|------------|--------|
-| — | Coming soon | — | — |
-
----
-
 ## 🎯 Goals
 
-- [ ] Solve **150+ LeetCode problems** across SQL, Arrays, Strings, Trees, DP
+- [ ] Solve **300+ LeetCode problems** across SQL, Arrays, Strings, Trees, DP
 - [ ] Complete the **LeetCode Top Interview 150** list
 - [ ] Cover all major DSA topics: Arrays · Strings · Linked Lists · Trees · Graphs · DP · Sorting · Binary Search
 - [ ] Maintain a **daily practice streak**
