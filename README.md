@@ -30,12 +30,18 @@ Files are named directly by **LeetCode problem number and title** — flat struc
 
 ```
 DSA_Practice/
+├── 1. Two Sum
+├── 2. Add Two Numbers
+├── 3. Longest Substring Without Repeating Characters
+├── 4. Median of Two Sorted Arrays
+├── 5. Longest Palindromic Substring
+├── 6. Zigzag Conversion
 ├── 7. Reverse Integer
+├── 8. String to Integer (atoi)
 ├── 9. Palindrome Number
-├── 197. Rising Temperature
-├── 509. Fibonacci Number
-├── 570. Managers with at Least 5 Direct Reports
+├── 10. Regular Expression Matching
 └── ...
+
 ```
 
 > One file per problem. Organized by problem number. Simple and consistent.
@@ -58,8 +64,10 @@ Not every problem needs all three steps — but every problem gets thought throu
 
 ## 🎯 Goals
 
-- Solve **300+ LeetCode problems** across multiple topics and languages
-- Complete the **LeetCode Top Interview 150** list
+- Solve **250+ LeetCode problems** across multiple topics and languages
+- Complete the **LeetCode 75** list
+- Complete the **SQL 50** list
+- Complete the **Introduction to Pandas** list
 - Cover all major DSA topics:
   `Arrays` · `Strings` · `Linked Lists` · `Trees` · `Graphs` · `Dynamic Programming` · `Sorting` · `Binary Search` · `SQL`
 - Maintain a **daily practice streak**
