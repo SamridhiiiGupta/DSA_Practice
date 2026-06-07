@@ -1,18 +1,18 @@
-<div align="center">
+<h1 align="center">🧠 DSA Practice</h1>
 
-# 🧠 DSA Practice
+<p align="center">
+  <em>One problem at a time. Every day.</em>
+</p>
 
-### *One problem at a time. Every day.*
+<p align="center">
+  <img src="https://img.shields.io/badge/LeetCode-Active-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  <img src="https://img.shields.io/badge/Focus-DSA%20%26%20Problem%20Solving-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Updated-Regularly-brightgreen?style=for-the-badge" />
+</p>
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-Practice-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/)
-[![Language](https://img.shields.io/badge/Languages-Python%20%7C%20SQL-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/SamridhiiiGupta/DSA_Practice)
-[![GitHub](https://img.shields.io/badge/GitHub-SamridhiiiGupta-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SamridhiiiGupta)
-
-<br />
-
-> *"Consistency beats intensity. Show up. Solve. Repeat."*
-
-</div>
+<p align="center">
+  <em>"Consistency beats intensity. Show up. Solve. Repeat."</em>
+</p>
 
 ---
 
@@ -26,54 +26,68 @@ The goal isn't just to solve problems. It's to **understand them deeply** — br
 
 ## 📂 Structure
 
+Files are named directly by **LeetCode problem number and title** — flat structure, no subfolders, no language-based grouping.
+
 ```
 DSA_Practice/
-│
-├── SQL/
-│   ├── 1757. Recyclable and Low Fat Products.sql
-│   └── ...
-│
-├── Python/
-│   ├── Arrays/
-│   ├── Strings/
-│   ├── LinkedLists/
-│   ├── Trees/
-│   ├── DP/
-│   └── ...
-│
-└── README.md
+├── 7. Reverse Integer
+├── 9. Palindrome Number
+├── 197. Rising Temperature
+├── 509. Fibonacci Number
+├── 570. Managers with at Least 5 Direct Reports
+└── ...
 ```
 
-> Structure evolves as more problems are added. Solutions are organized by language and topic.
+> One file per problem. Organized by problem number. Simple and consistent.
+
+---
+
+## 🧠 Approach
+
+Every solution follows a structured thinking pattern:
+
+| Step | What it means |
+|------|----------------|
+| 🔴 **Brute Force** | The most straightforward naive solution — just make it work |
+| 🟡 **Better** | Eliminate redundant work — think before optimizing |
+| 🟢 **Optimal** | Best possible time and space complexity with clean code |
+
+Not every problem needs all three steps — but every problem gets thought through properly.
 
 ---
 
 ## 🎯 Goals
 
-- [ ] Solve **300+ LeetCode problems** across SQL, Arrays, Strings, Trees, DP
-- [ ] Complete the **LeetCode Top Interview 150** list
-- [ ] Cover all major DSA topics: Arrays · Strings · Linked Lists · Trees · Graphs · DP · Sorting · Binary Search
-- [ ] Maintain a **daily practice streak**
+- Solve **300+ LeetCode problems** across multiple topics and languages
+- Complete the **LeetCode Top Interview 150** list
+- Cover all major DSA topics:
+  `Arrays` · `Strings` · `Linked Lists` · `Trees` · `Graphs` · `Dynamic Programming` · `Sorting` · `Binary Search` · `SQL`
+- Maintain a **daily practice streak**
 
 ---
 
-## 🛠 Languages Used
+## 💻 Languages
+
+LeetCode supports many languages — I use whichever fits the problem best.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
 ---
 
-## 🤝 Connect
+## 🔗 Connect
 
 If you're also grinding DSA, let's connect!
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-samridhiiigupta.netlify.app-000?style=flat-square)](https://samridhiiigupta.netlify.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-samridhiii--gupta-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samridhiii-gupta/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-samridhigupta.netlify.app-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://samridhigupta.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-samridhi--gupta-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samridhiii-gupta/)
+[![GitHub](https://img.shields.io/badge/GitHub-SamridhiiiGupta-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/SamridhiiiGupta)
 
 ---
 
-<div align="center">
-<sub>Updated regularly · Built with consistency by <strong>Samridhi Gupta</strong></sub>
-</div>
+<p align="center">
+  Updated regularly · Built with consistency by <b>Samridhi Gupta</b>
+</p>
