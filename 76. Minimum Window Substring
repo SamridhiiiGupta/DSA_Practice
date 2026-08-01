@@ -1,0 +1,59 @@
+class Solution {
+public:
+    string minWindow(string s, string t) {
+
+        unordered_map<char, int> need;
+        unordered_map<char, int> window;
+
+        // Store frequency of each character in t
+        for(char c : t)
+            need[c]++;
+
+        // Number of unique characters we need to satisfy
+        int required = need.size();
+
+        // Number of unique characters currently satisfied
+        int formed = 0;
+
+        int left = 0;
+        int minLen = INT_MAX;
+        int start = 0;
+
+        // Expand the window
+        for(int right = 0; right < s.size(); right++) {
+
+            char c = s[right];
+
+            // Add current character to window
+            window[c]++;
+
+            // If frequency matches exactly, one requirement is satisfied
+            if(need.count(c) && window[c] == need[c])
+                formed++;
+
+            // Try to shrink while window is valid
+            while(left <= right && formed == required) {
+
+                // Update answer if current window is smaller
+                if(right - left + 1 < minLen) {
+                    minLen = right - left + 1;
+                    start = left;
+                }
+
+                char leftChar = s[left];
+
+                // Remove left character
+                window[leftChar]--;
+
+                // If requirement breaks, window becomes invalid
+                if(need.count(leftChar) &&
+                   window[leftChar] < need[leftChar])
+                    formed--;
+
+                left++;
+            }
+        }
+
+        return minLen == INT_MAX ? "" : s.substr(start, minLen);
+    }
+};
