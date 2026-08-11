@@ -1,0 +1,76 @@
+class Solution {
+public:
+    void gameOfLife(vector<vector<int>>& board) {
+
+        int m = board.size();
+        int n = board[0].size();
+
+        int dr[] = {-1, -1, -1, 0, 0, 1, 1, 1};
+        int dc[] = {-1, 0, 1, -1, 1, -1, 0, 1};
+
+        // First pass:
+        // Calculate the next state while preserving the original state.
+        for(int r = 0; r < m; r++) {
+
+            for(int c = 0; c < n; c++) {
+
+                int liveNeighbors = 0;
+
+                // Check all 8 neighbors
+                for(int k = 0; k < 8; k++) {
+
+                    int nr = r + dr[k];
+                    int nc = c + dc[k];
+
+                    // Check if neighbor is inside the board
+                    if(nr >= 0 && nr < m &&
+                       nc >= 0 && nc < n) {
+
+                        // 1 and -1 both mean the cell
+                        // was originally alive.
+                        if(board[nr][nc] == 1 ||
+                           board[nr][nc] == -1) {
+
+                            liveNeighbors++;
+                        }
+                    }
+                }
+
+                // Current cell is alive
+                if(board[r][c] == 1) {
+
+                    // Dies due to underpopulation or overpopulation
+                    if(liveNeighbors < 2 ||
+                       liveNeighbors > 3) {
+
+                        board[r][c] = -1;
+                    }
+                }
+
+                // Current cell is dead
+                else if(board[r][c] == 0) {
+
+                    // Becomes alive due to reproduction
+                    if(liveNeighbors == 3) {
+
+                        board[r][c] = 2;
+                    }
+                }
+            }
+        }
+
+        // Second pass:
+        // Convert temporary states into final states.
+        for(int r = 0; r < m; r++) {
+
+            for(int c = 0; c < n; c++) {
+
+                if(board[r][c] == -1)
+                    board[r][c] = 0;
+
+                else if(board[r][c] == 2)
+                    board[r][c] = 1;
+            }
+        }
+    }
+};
