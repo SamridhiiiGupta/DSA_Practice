@@ -1,0 +1,29 @@
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+
+        unordered_map<string, vector<string>> mp;
+
+        for(string word : strs) {
+
+            // Create a copy of the current word
+            string key = word;
+
+            // Sort the copy to create the anagram signature
+            sort(key.begin(), key.end());
+
+            // Put the original word into the group
+            // corresponding to its sorted form
+            mp[key].push_back(word);
+        }
+
+        vector<vector<string>> result;
+
+        // Collect all groups
+        for(auto& pair : mp) {
+            result.push_back(pair.second);
+        }
+
+        return result;
+    }
+};
