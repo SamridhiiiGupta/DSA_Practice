@@ -1,0 +1,44 @@
+class Solution {
+public:
+    string simplifyPath(string path) {
+
+        vector<string> st;
+        string current = "";
+
+        for (int i = 0; i <= path.size(); i++) {
+
+            if (i == path.size() || path[i] == '/') {
+
+                if (current == "" || current == ".") {
+                    // Ignore empty parts and "."
+                }
+                else if (current == "..") {
+
+                    if (!st.empty()) {
+                        st.pop_back();
+                    }
+                }
+                else {
+                    st.push_back(current);
+                }
+
+                current = "";
+            }
+            else {
+                current += path[i];
+            }
+        }
+
+        string result = "";
+
+        for (string dir : st) {
+            result += "/" + dir;
+        }
+
+        if (result == "") {
+            return "/";
+        }
+
+        return result;
+    }
+};
