@@ -1,0 +1,51 @@
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+
+        ListNode* groupPrev = dummy;
+
+        while (true) {
+
+            // Step 1: Find the end of the current group
+            ListNode* groupEnd = groupPrev;
+
+            for (int i = 0; i < k; i++) {
+
+                groupEnd = groupEnd->next;
+
+                if (groupEnd == nullptr) {
+                    return dummy->next;
+                }
+            }
+
+            // Step 2: Save the node after the group
+            ListNode* nextGroup = groupEnd->next;
+
+            // Step 3: Reverse the group
+            ListNode* prev = nextGroup;
+            ListNode* current = groupPrev->next;
+
+            for (int i = 0; i < k; i++) {
+
+                ListNode* next = current->next;
+
+                current->next = prev;
+
+                prev = current;
+
+                current = next;
+            }
+
+            // Step 4: Connect previous part to reversed group
+            ListNode* oldGroupStart = groupPrev->next;
+
+            groupPrev->next = prev;
+
+            // Step 5: Move to the next group
+            groupPrev = oldGroupStart;
+        }
+    }
+};
