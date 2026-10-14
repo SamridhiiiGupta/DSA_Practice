@@ -1,0 +1,37 @@
+
+class Solution {
+public:
+    Node* connect(Node* root) {
+        if (root == nullptr) {
+            return nullptr;
+        }
+
+        Node* levelStart = root;
+
+        while (levelStart != nullptr) {
+            Node dummy;
+            Node* tail = &dummy;
+
+            Node* current = levelStart;
+
+            while (current != nullptr) {
+                if (current->left != nullptr) {
+                    tail->next = current->left;
+                    tail = tail->next;
+                }
+
+                if (current->right != nullptr) {
+                    tail->next = current->right;
+                    tail = tail->next;
+                }
+
+                current = current->next;
+            }
+
+            tail->next = nullptr;
+            levelStart = dummy.next;
+        }
+
+        return root;
+    }
+};
